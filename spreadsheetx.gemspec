@@ -4,14 +4,14 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{spreadsheetx}
+  s.name = "spreadsheetx"
   s.version = "0.2.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Craig Ulliott"]
-  s.date = %q{2011-07-09}
-  s.description = %q{Using an existing xlsx file as a template, it allows you to modify cell values and add rows and columns.  Facilitating a templateized approach to creating a new xlsx spreadsheet}
-  s.email = %q{craigulliott@gmail.com}
+  s.date = "2013-10-30"
+  s.description = "Using an existing xlsx file as a template, it allows you to modify cell values and add rows and columns.  Facilitating a templateized approach to creating a new xlsx spreadsheet"
+  s.email = "craigulliott@gmail.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.rdoc"
@@ -34,37 +34,34 @@ Gem::Specification.new do |s|
     "spreadsheetx.gemspec",
     "templates/spec.xlsx"
   ]
-  s.homepage = %q{http://github.com/craigulliott/spreadsheetx}
+  s.homepage = "http://github.com/craigulliott/spreadsheetx"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.6.2}
-  s.summary = %q{Facilitates opening and modifying existing xlsx excel spreadsheets}
+  s.rubygems_version = "2.0.0"
+  s.summary = "Facilitates opening and modifying existing xlsx excel spreadsheets"
 
   if s.respond_to? :specification_version then
-    s.specification_version = 3
+    s.specification_version = 4
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<zipruby>, ["~> 0.3.6"])
-      s.add_runtime_dependency(%q<libxml-ruby>, ["~> 2.0.9"])
+      s.add_runtime_dependency(%q<libxml-ruby>, ["~> 2.7.0"])
       s.add_development_dependency(%q<rspec>, ["~> 2.3.0"])
-      s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
+      s.add_development_dependency(%q<bundler>, ["~> 1.3.5"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.6.2"])
-      s.add_development_dependency(%q<rcov>, [">= 0"])
     else
       s.add_dependency(%q<zipruby>, ["~> 0.3.6"])
-      s.add_dependency(%q<libxml-ruby>, ["~> 2.0.9"])
+      s.add_dependency(%q<libxml-ruby>, ["~> 2.7.0"])
       s.add_dependency(%q<rspec>, ["~> 2.3.0"])
-      s.add_dependency(%q<bundler>, ["~> 1.0.0"])
+      s.add_dependency(%q<bundler>, ["~> 1.3.5"])
       s.add_dependency(%q<jeweler>, ["~> 1.6.2"])
-      s.add_dependency(%q<rcov>, [">= 0"])
     end
   else
     s.add_dependency(%q<zipruby>, ["~> 0.3.6"])
-    s.add_dependency(%q<libxml-ruby>, ["~> 2.0.9"])
+    s.add_dependency(%q<libxml-ruby>, ["~> 2.7.0"])
     s.add_dependency(%q<rspec>, ["~> 2.3.0"])
-    s.add_dependency(%q<bundler>, ["~> 1.0.0"])
+    s.add_dependency(%q<bundler>, ["~> 1.3.5"])
     s.add_dependency(%q<jeweler>, ["~> 1.6.2"])
-    s.add_dependency(%q<rcov>, [">= 0"])
   end
 end
 
